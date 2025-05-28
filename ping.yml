@@ -4,8 +4,5 @@
   tasks:
     - name: ping the hosts
       ansible.builtin.ping:
-      register: ping_result
-      -debug:
-        msg: "Ping to {{ inventory_hostname }} was successful."
-      when: ping_result.ping is defined
+
 
