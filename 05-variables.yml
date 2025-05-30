@@ -11,3 +11,6 @@
     - name: print devops course info
       ansible.builtin.debug:
         msg: "Hello {{ COURSE }}, course duration: {{ DURATION }}, Trainer: {{ TRAINER }}"
+    - name: print devops course info
+      ansible.builtin.debug:
+        msg: "Hello {{ COURSE }}, course duration: {{ DURATION }}, Trainer: {{ TRAINER }}"
