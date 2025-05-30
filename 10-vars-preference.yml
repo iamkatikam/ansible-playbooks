@@ -6,10 +6,10 @@
       GREETING: "Hello from PLAY"
     vars_files:
     - course-vars
-    vars_prompt:
-    - name: GREETING
-      prompt: Please enter the Greeting
-      private: false
+    #vars_prompt:
+    #- name: GREETING
+    #  prompt: Please enter the Greeting
+    #  private: false
 
     tasks:
     - name: print vars values
@@ -21,3 +21,4 @@
 #1. commandline
 #2. TASK
 #3.FILE
+#4.prompt
