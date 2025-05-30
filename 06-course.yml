@@ -1,0 +1,11 @@
+---
+  - name: DevSecops AWS info
+    hosts: localhost
+    connection: local
+
+    vars_files:
+    - course-vars
+    tasks:
+    - name: print variables data from input vars_files
+      ansible.builtin.debug:
+        msg: "Hello {{ Course }}, Duration {{ Duration }}, Trainer {{ Trainer }}"
