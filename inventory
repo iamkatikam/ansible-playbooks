@@ -11,7 +11,7 @@
 [local]
 localhost
 
-[localhost:vars]
+[local:vars]
 Course=variables
 Duration=2 hours
 Trainer=Sivakumar
