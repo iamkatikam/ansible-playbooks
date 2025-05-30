@@ -10,6 +10,6 @@
 
 [localhost:vars]
 Course=variables
-Duration: 2 hours
-Trainer: Sivakumar
+Duration=2 hours
+Trainer=Sivakumar
 
