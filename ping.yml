@@ -1,8 +1,8 @@
+---
 - name: verify ping response
   hosts: test
   gather_facts: no
   tasks:
-    - name: ping the hosts
-      ansible.builtin.ping:
-      register: ping_result
+  - name: ping the hosts
+    ansible.builtin.ping:
     
