@@ -1,6 +1,7 @@
 ---
   - name: Define variables in inventory file and read from play
-    hosts: frontend
+    hosts: localhost
+    connection: local
 
     tasks:
     - name: print vars info
