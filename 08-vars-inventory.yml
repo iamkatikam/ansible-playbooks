@@ -1,6 +1,6 @@
 ---
   - name: print vars from inventory vars_files
-    hosts: localhost
+    hosts: local
     connection: local
 
     tasks:
