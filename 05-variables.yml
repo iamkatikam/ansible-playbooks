@@ -1,6 +1,6 @@
 ---
   - name: variables in ansible 
-    hosts: local
+    hosts: localhost
     connection: local
     vars:
       COURSE: Ansible
