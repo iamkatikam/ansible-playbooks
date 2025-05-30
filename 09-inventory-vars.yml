@@ -1,6 +1,6 @@
 ---
   - name: Define variables in inventory file and read from play
-    hosts: localhost
+    hosts: local
     connection: local
 
     tasks:
