@@ -1,6 +1,6 @@
 ---
   - name: hello world in ansible
-    hosts: local
+    hosts: localhost
     connection: local
 
     tasks:
