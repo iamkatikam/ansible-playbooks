@@ -1,0 +1,8 @@
+---
+  - name: Define variables in inventory file and read from play
+    hosts: frontend
+
+    tasks:
+    - name: print vars info
+      ansible.builtin.debug:
+        msg: "course: {{ course }}, duration: {{ duration }}, trainer: {{ trainer }}"
