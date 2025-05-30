@@ -2,6 +2,7 @@
   - name: Install packages on hosts
     hosts: localhost
     connection: local
+    become: yes
 
     tasks:
     - name: Install nginx packages
