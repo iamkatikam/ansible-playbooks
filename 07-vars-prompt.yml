@@ -2,11 +2,15 @@
   - name: print variable from user prompt
     hosts: localhost
     connection: local
+
     vars_prompt:
     - name: usernmae
       prompt: Please enter usernmae
-    - password: password
+      private: false
+
+    - name: password
       prompt: please enter password
+      private: true
 
     tasks:
     - name: print course details
