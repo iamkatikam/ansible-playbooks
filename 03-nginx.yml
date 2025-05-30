@@ -1,7 +1,7 @@
 ---
   - name: Install packages on hosts
-    hosts: localhost
-    connection: local
+    hosts: frontend
+    #connection: local
     become: yes
 
     tasks:
