@@ -6,16 +6,16 @@
     tasks:
     - name: play1 from task1
       ansible.builtin.debug:
-        msg "Hello from play1 task1"
+        msg: "Hello from play1 task1"
 
     - name: play1 from task2
       ansible.builtin.debug:
-        msg "Hello from play1 task2"
+        msg: "Hello from play1 task2"
 
     - name: play2 from task1
       ansible.builtin.debug:
-        msg "Hello from play2 task1"
+        msg: "Hello from play2 task1"
 
     - name: play2 from task2
       ansible.builtin.debug:
-        msg "Hello from play2 task2"
+        msg: "Hello from play2 task2"
