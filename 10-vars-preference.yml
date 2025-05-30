@@ -2,10 +2,10 @@
   - name: variables preferences
     hosts: local
     connection: local
-    vars:
-      GREETING: "Hello from PLAY"
-    vars_files:
-    - course-vars
+    #vars:
+    ##  GREETING: "Hello from PLAY"
+    #vars_files:
+    #- course-vars
     #vars_prompt:
     #- name: GREETING
     #  prompt: Please enter the Greeting
@@ -22,3 +22,5 @@
 #2. TASK
 #3.FILE
 #4.prompt
+#5.PLAY
+#6.inventory
