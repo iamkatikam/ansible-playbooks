@@ -4,9 +4,9 @@
     become: yes
 
     tasks:
-    - name: install nginx if RedHat
+    - name: install ansible if RedHat
       ansible.builtin.dnf:
-        name: nginx
+        name: ansible
         state: present
       when: ansible_os_family == "RedHat"
 
