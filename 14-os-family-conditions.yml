@@ -1,0 +1,17 @@
+---
+  - name: install package if os family is RedHat
+    hosts: test
+    become: yes
+
+    tasks:
+    - name: install nginx if RedHat
+      ansible.builtin.dnf:
+        - name: nginx
+          state: present
+      when: ansible_os_family == RedHat
+
+    - name: install nginx if Debian
+      ansible.builtin.dnf:
+        - name: nginx
+          state: present
+      when: ansible_os_family == Debian
