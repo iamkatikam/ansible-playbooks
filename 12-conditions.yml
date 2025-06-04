@@ -1,0 +1,16 @@
+---
+  - name: validate when condition in ansible playbook
+    hosts: test
+
+    vars:
+      NUMBER: 66
+      
+    tasks:
+    - name: check a number is less than 100
+      ansible.builtin.debug:
+        msg: "{{ NUMBER }} is lessa than 100"
+      when: NUMBER < 100
+    - name: check a num is greater than 100
+      ansible.builtin.msg:
+        msg: "{{ NUMBER }} is greter than 100"
+      when: NUMBER > 100
