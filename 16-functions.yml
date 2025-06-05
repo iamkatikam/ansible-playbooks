@@ -5,4 +5,4 @@
     tasks:
     - name: ansible filters
       ansible.builtin.debug:
-        msg: "print {{ person }} | default(Ramesh)"
+        msg: "print {{ person | default('Ramesh') }}"
