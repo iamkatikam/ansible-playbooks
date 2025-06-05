@@ -1,6 +1,6 @@
 ---
   - name: shell vs command 
-    connection: local
+    hosts: local
     connection: local
     tasks:
     - name: execute command in ansible
