@@ -1,0 +1,8 @@
+---
+  - name: ansible functions/filters
+    hosts: local
+    connection: local
+    tasks:
+    - name: ansible filters
+      ansible.builtin.debug:
+        msg: "print {{ person }} | default(Ramesh)"
