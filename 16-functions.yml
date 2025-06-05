@@ -2,7 +2,13 @@
   - name: ansible functions/filters
     hosts: local
     connection: local
+    vars:
+    - persons: "Ramesh, Raheem, Joseph"
     tasks:
     - name: ansible an undefined variable usinf filter
       ansible.builtin.debug:
         msg: "Hello, {{ person | default('Ramesh') }}"
+
+    - name: print string list
+      ansible.builtin.debug:
+        msg: "Hello, {{ persons }}"
