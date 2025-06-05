@@ -3,7 +3,7 @@
     hosts: local
     connection: local
     vars:
-    - persons: "Ramesh, Raheem, Joseph"
+    - persons: "Ramesh,Raheem,Joseph"
     tasks:
     - name: ansible an undefined variable usinf filter
       ansible.builtin.debug:
@@ -12,3 +12,11 @@
     - name: print string list
       ansible.builtin.debug:
         msg: "Hello, {{ persons | split(',') }}"
+    - name: convert map/dict to list
+      vars:
+        course:
+          name: devops
+          duration: 10HR
+          trainer: siva
+      ansible.builtin.debug:
+        msg: "course info: {{course | dict2items }}"
