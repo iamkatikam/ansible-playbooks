@@ -6,6 +6,7 @@
     - name: execute command in ansible
       ansible.builtin.command: "ls -ltr > /tmp/output.txt"
       register: output
+      ignore_errors: yes
 
     - name: print command output
       ansible.builtin.debug:
