@@ -3,6 +3,6 @@
     hosts: local
     connection: local
     tasks:
-    - name: ansible filters
+    - name: ansible an undefined variable usinf filter
       ansible.builtin.debug:
-        msg: "print {{ person | default('Ramesh') }}"
+        msg: "Hello, {{ person | default('Ramesh') }}"
