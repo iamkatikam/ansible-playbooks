@@ -1,0 +1,9 @@
+---
+  - name: shell vs command 
+    connection: local
+    connection: local
+    tasks:
+    - name: print output for command 
+      ansible.builtin.command: "ls -ltr > /tmp/output.txt"
+      register: output
+      debug: var=output
