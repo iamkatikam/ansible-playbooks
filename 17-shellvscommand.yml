@@ -10,7 +10,7 @@
 
     - name: print command output
       ansible.builtin.debug:
-        msg: "command output is : {{ output }}"
+        msg: "{{ output }}"
 
     - name: execute shell in ansible
       ansible.builtin.shell: "ls -ltr > /tmp/output.txt"
@@ -18,4 +18,4 @@
 
     - name: print shell output
       ansible.builtin.debug:
-        msg: "command output is : {{ output_shell }}"
+        msg: "{{ output_shell }}"
