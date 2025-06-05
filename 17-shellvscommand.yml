@@ -3,7 +3,18 @@
     connection: local
     connection: local
     tasks:
-    - name: print output for command 
+    - name: execute command in ansible
       ansible.builtin.command: "ls -ltr > /tmp/output.txt"
       register: output
-      debug: var=output
+
+    - name: print command output
+      ansible.builtin.debug:
+        msg: "command output is : {{ output }}"
+
+    - name: execute shell in ansible
+      ansible.builtin.shell: "ls -ltr > /tmp/output.txt"
+      register: output_shell
+
+    - name: print shell output
+      ansible.builtin.debug:
+        msg: "command output is : {{ output_shell }}"
