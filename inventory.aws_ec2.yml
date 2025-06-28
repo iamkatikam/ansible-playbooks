@@ -6,8 +6,8 @@ filters:
 keyed_groups:
   # add hosts to tag_Name_value groups for each aws_ec2 host's tags.Name variable.
   - key: tags.Name
-    prefix: ""
-    separator: ""
+    prefix: "dynamic"
+    separator: "-"
 hostnames:
   # You can also specify a list in order of precedence for hostname variables.
   - private-ip-address
